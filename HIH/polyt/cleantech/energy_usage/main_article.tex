@@ -48,6 +48,9 @@
 
 
 % *** GRAPHICS RELATED PACKAGES ***
+\usepackage{graphicx}
+\graphicspath{{./figures/}}
+
 %
 \ifCLASSINFOpdf
   % \usepackage[pdftex]{graphicx}
@@ -341,16 +344,21 @@ The increase in energy consuming appliances can be split into both leisure-usage
 \subsection{development of energyconsuming devices in households}
 
 \section{Theoretical considerations}
-Attempting to enforce new technology aided habits in a population can be described by models of techhnology adoption. 
-Traditional approaches suggest that technology adopters gain interest in a product by acquiring it and assing its application, hereby collecting knowledge about it. \cite{gilbert}
+Attempting to enforce new technology aided habits in a population can be described by models of technology adoption. 
+Traditional approaches suggest that technology adopters gain interest in a product by acquiring it and assessing its application, hereby assimilating knowledge about it \cite{gilbert}.
 
-Adoption of innovations, where innovations are defined as an idea, practice or object suited for adoption, is well described Everett Rogers diffusion research.
+Adoption of innovations, where innovations are defined as an idea, practice or object suited for adoption, is well described by Everett Rogers diffusion research.
 Initially Rogers models \cite{rogers} operates with a model describing market penetration described bu an S curve, also known as the logistic function.
 
 
-\textbf{FIGURE}Rates of adoption
+\begin{figure}
+\begin{center}
+%\scalebox{8cm}{!}{\includegraphics{adoption_rates.png}}
+\includegraphics[width=8cm]{adoption_rates.png}
+\caption{\textit{Successive adoption groups each adopting technology at different rates.}}
+\end{center}
+\end{figure}
 
-The figure shows successive groups of consumers each adopting technology at different rates.
 
 \begin{table}[ht]
 
@@ -358,7 +366,7 @@ The figure shows successive groups of consumers each adopting technology at diff
 
 \centering  % used for centering table
 
-\begin{tabular}{|p{1.2cm} |p{5.5cm}|} % centered columns (4 columns)
+\begin{tabular}{|p{2cm} |p{5.5cm}|} % centered columns (4 columns)
 
 \hline\hline                        %inserts double horizontal lines
 
@@ -370,7 +378,7 @@ Group & Charachteristics\\ [0.5ex] % inserts table
 
 Innovators &			%new line
 This group is characterized by being the first individuals to adopt 
-an innovation. 
+an innovation, thus this group represents only 2.5\% of the consumers \cite{diffusion2}. 
 Innovators are typically members of the higher social classes, 
 risk willing, has good financial lucidity, and are very social competent, 
 often in close contact with other innovators. 
@@ -379,19 +387,22 @@ Innovator may even being wiling to use a technology prototype.  \\ % inserting b
 \hline
 
 Early adopters & 
-The early adopters are the second fastest group to adopt an innovation. What characterizes Early Adopters are a high degree of opinion leadership, compared to the other adopter groups. Innovators and early adopters are closely related in terms of education level, financial lucidity and social skills. Early adopters are a bit more judicious in their decission making regarding adoption of a new technology, compared to the innovators, thus seeking to adopt a somewhat mature technology. Their judicious approach often position early adopters in central communication positions, as opinion makers \cite{rogers_model}.\\
+The early adopters are the second fastest group to adopt an innovation. What characterizes Early Adopters are a high degree of opinion leadership, compared to the other adopter groups. Innovators and early adopters are closely related in terms of education level, financial lucidity and social skills. Early adopters are a bit more judicious in their decission making regarding adoption of a new technology, compared to the innovators, thus seeking to adopt a somewhat mature technology. Their judicious approach often position early adopters in central communication positions, as opinion makers \cite{rogers_model}.
+Early adopters make up about 13.5\% of the consumers \cite{diffusion2} \\
 \hline
 
 Early majority &  
-This group, representing 34 \% of consumers \bibitem{adoption2} are the careful consumers, avoiding the big risks, by relying on feedback from the early adopter group. 
-This group seldom represents the opinion makers, but rely on feedback and recommendations from others.
- \\
+This group, representing 34 \% of consumers \cite{diffusion2} are the careful consumers, avoiding the big risks, by relying on feedback from the early adopter group. 
+This group seldom represents the opinion makers, but rely on feedback and recommendations from others. Their more awaiting approach to adoption results in a somewhat later time for adoption of emerging innovations\cite{rogers_model}.\\
+\hline
 
-Late majority & 35 \\
+Late majority & 
+The late majority also represents app. 34\% of the consumers\cite{diffusion2}, but with a somewhat more skeptical approach. Here, only innovations that has became more common items are adopted. The late majority group is characterized, in general, by having below average social status, and only very little opinion leadership\cite{rogers_model}.\\
+\hline
 
-Laggards & 45 \\ [1ex]      % [1ex] adds vertical space
-
-\hline %inserts single line
+Laggards & 
+Laggards are the remaining 16\% of customers trying to avoid changes and having to adopt new innovations. This group may not adopt a new innovation until traditional alternatives are no longer available  cs\cite{diffusion2}. Focus is very much on traditions, the group tends to have the highest age among adopters, lowest financial fluidity, and primarily only being in contact with close friends and family. Thus this group does not represent any opinion leadership\cite{rogers_model} \\ 
+\hline
 
 \end{tabular}
 
@@ -399,11 +410,17 @@ Laggards & 45 \\ [1ex]      % [1ex] adds vertical space
 
 \end{table}
 
+
+
 ?geels 
 
 
 Applying adoption theory
+
 Perspectives on current efforts
+
+asses roberts in terms of technology lifetime vs risk vs invenstment
+
 
 Describe technology adoption cycles eg. early adopters, laggards etc.
 
@@ -500,7 +517,13 @@ om den danske energipolitik 2012-2020} \relax Folketinget March 2012
 \bibitem{rogers_model}
 Rogers, E.M., \emph{Diffusion of Innovations}, \relax 4th ed. Free Press, New York. 1995
 
-\bibitem{diffusion2} \emph{product diffusion curve},\relax www.quickmba.com/markting/product/diffusion
+\bibitem{diffusion2} 
+acb \emph{product diffusion curve},\relax www.quickmba.com/markting/product/diffusion
+
+\bibitem{gilbert} 
+Gilbert, M., Cordey-Hayes, M., 1996. \emph{Understanding the process of
+knowledge transfer to achieve successful technological innovation}, \relax Technovation 1996
+
 \end{thebibliography}
 
 
