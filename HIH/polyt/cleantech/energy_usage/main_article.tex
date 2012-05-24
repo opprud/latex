@@ -1,9 +1,11 @@
 %
-\documentclass[conference]{IEEEtran}
+\documentclass[journal]{IEEEtran}
 \usepackage{graphicx}
 \usepackage{placeins}
 %\usepackage{caption}
 \graphicspath{{./figures/}}
+
+%\input{preamble}
 
 
 
@@ -104,31 +106,28 @@ Traditional approaches suggest that technology adopters gain interest in a produ
 
 \subsection{Rogers innovation adoption model}
 Adoption of innovations, where innovations are defined as an idea, practice or object suited for adoption, is well described by Everett Rogers diffusion research.
-Initially Rogers models \cite{rogers} operates with a model describing market penetration described bu an S curve, also known as the logistic function.
+Initially Rogers models \cite{rogers_model} operates with a model describing market penetration described bu an S curve, also known as the logistic function, ~\ref{fig:adoption}
 
 
 \begin{figure}
-%\scalebox{8cm}{!}{\includegraphics{adoption_rates.png}}
-% %\includegraphics[bb=0 0 2 18]{adoption_rates_2.png}
+%\includegraphics{adoption_rates.pdf}
+\includegraphics[width=0.4\textwidth]{adoption_rates.png}
 \caption{\textit{Successive adoption groups each adopting technology at different rates.}}			
 \end{figure}
+\label{fig:adoption} % is used to refer this table in the text
 
 
 %table below
 \begin{table}[ht]
 
 \caption{Adopter grouping according to Rogers model} % title of Table
-
 \centering  % used for centering table
 
 \begin{tabular}{|p{2cm} |p{5.5cm}|} % centered columns (4 columns)
-
 \hline\hline                        %inserts double horizontal lines
 
 Group & Charachteristics\\ [0.5ex] % inserts table 
-
 %heading
-
 \hline                  % inserts single horizontal line
 
 Innovators &			%new line
@@ -160,10 +159,8 @@ Laggards are the remaining 16\% of customers trying to avoid changes and having 
 \hline
 
 \end{tabular}
-
-\label{table:nonlin} % is used to refer this table in the text
-
-\end{table}
+\label{table:rogers_char} % is used to refer this table in the text
+1\end{table}
 
 
 
@@ -194,6 +191,8 @@ linear regeression ?
 relate / score existing efforts in a matrix
 
 \subsection{hypothesis}
+\textit{"There is a potential in visualizing energy consumption i real time, to enforce greener habits, among the groups"}
+
 \textit{"Visualizing energy consumption in realtime, by means of IT aided solution, and focusing onpotential savings, will enforce greener habits among the energy consumers"}
 
 \textit{"By presenting a clear distinction between leisure and nessecery usage, the consumer groups, capable of adopting this technology, will be able to to adopt a greener mindset"}
@@ -213,29 +212,76 @@ Existing evaluation of present conducted campaigns and where possible evaluation
 Below the most significant, and regional initittives, in Denmark across the last ?? years are outlined
 
 \subsection{Energymarking of electric products}
-ABCDEF
+\begin{figure}
+\includegraphics[width=0.15\textwidth]{energy_mark.png}
+\caption{\textit{EU's energymark}}			
+\label{fig:emark} % is used to refer this table in the text
+\end{figure}
 
-\subsection{Go energi}
+The EU energymark is mandatory for all producers and retailers of following household appliances: 
+Fridge and freezers, Dishwashers, Washing-machines, Tumble-driers, Electric bulbs, Ovens, 
+Air-conditioning and climate devices and Televisions.
+The mark originally rates products from A to G, where A indicates the best energy efficiency. 
+Additions allows \textbf{A+}, \textbf{A++} and \textbf{A+++} marking, if technology allows this. 
+
+The rating is relative, to the current technological availability, for instance regarding \textit{light-bulbs}, 
+here the bulbs are compared to traditional incandescent lightbulbs, today an \textbf{A}-rated buld shall produce 4 times more \textit{Lumen} per \textit{Watt} than a similar incandescent type, emitting the same amount of light. For light  bulbs the energy mark also specifies the expected lifetime in \textit{hours}.
+
+When buying new household appliances the energy-mark is a good factual indication, that can be used to judge the
+best energy efficiency, and thus biasing the customer to buy energy efficient products. 
+
+A potential drawback of the energy mark, is the risk of a non-persistent "green-impact", since the energy-mark 
+primarily is to be used during purchase. History shows that technology and alo energy efficiency improves over time, so the once purchased energymarked \textbf{A} fridge, might not be as efficient any more. The impact of the energy mark may not also not affect the users behavior, once the purchase has been made.  
+
+The legislation regarding \textit{energy-marking of energy-related products} states that saving are to be achieved by informing the end user about consumption during usage, and other vital facts. Other vital facts could be emitted \textit{Lumens} and expected liftime in \textit{Hours} for a lightbulb. 
+
+
+\textit{Keywords - efficiency, lifetime, standardization, harmonization.}
+
+\subsection{Go' Energi}
+\begin{figure}
+\includegraphics[width=0.15\textwidth]{enok.png}
+\caption{\textit{Go' energi's native Eskimo}}			
+\label{fig:enok} % is used to refer this table in the text
+\end{figure}
+
+Go' Energi is a campaign targeted at Danish Houseowners, with the aim of informing about potential improvements in indoor climate, comfort, energy economics
+and climate awareness.
+
+
+\textit{Keywords - inspiration, optimization, environmental conscience, act rather than think.}
 
 \subsection{something more}
 
-
 \subsection{Assesing inititatives}
-Below the different initiatives are assessed, and rated among each other
+In table ~\ref{table:asses_init} the different initiatives are assessed, and rated among each other
 
 %table below
 \begin{table}[t2]
+
 \caption{Assessing different initiatives} % title of Table
 \centering  % used for centering table
+
 \begin{tabular}{|p{1,5cm} |p{3.5cm} |p{2.5cm}|} % centered columns (4 columns)
 \hline\hline                        %inserts double horizontal lines
+
 Initiative & Charachteristics & adopter group \\ [0.5ex] % inserts table 
 %heading
 \hline                  % inserts single horizontal line
-Go' energi & asdknkn & Early majority Late Majority  \\
+
+Go' energi & 
+asdknkn & 
+Early majority\newline  Late Majority  \\
 \hline
+
+EU energy mark & 
+Mandatory, Easy understandable,  & 
+All  \\
+\hline
+
 \end{tabular}
-\label{table:nonlin} % is used to refer this table in the text
+\label{table:asses_init} % is used to refer this table in the text
+
 \end{table}
 
 
@@ -314,6 +360,9 @@ acb \emph{product diffusion curve},\relax www.quickmba.com/markting/product/diff
 \bibitem{gilbert} 
 Gilbert, M., Cordey-Hayes, M., 1996. \emph{Understanding the process of
 knowledge transfer to achieve successful technological innovation}, \relax Technovation 1996
+
+\bibitem{energylaw1} 
+\emph{Lov om energimærkning af energirelaterede produkter1}, \relax Klima- og Energiministeriet, Copenhagen May. 2011 
 
 \end{thebibliography}
 
