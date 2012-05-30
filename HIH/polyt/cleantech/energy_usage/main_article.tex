@@ -4,6 +4,11 @@
 \usepackage{placeins}
 %\usepackage{caption}
 \graphicspath{{./figures/}}
+%for drawing figures
+\usepackage{tikz}
+\usetikzlibrary{shapes,arrows}
+\usepackage{verbatim}
+
 
 %\input{preamble}
 
@@ -110,7 +115,43 @@ Traditional approaches suggest that technology adopters gain interest in a produ
 Adoption of innovations, where innovations are defined as an idea, practice or object suited for adoption, is well described by Everett Rogers diffusion research.
 
 \subsubsection{The five step innovation diffusion process}
-Adopting an innovation requires a number of decisions. The decisions happens sequentially over time, and are by Rogers \cite{rogers_model}
+Adopting an innovation requires a number of decisions. The decisions happens sequentially over time, and are by Rogers \cite{rogers_model} described as a five stage process.
+
+
+\tikzstyle{block} = [draw, fill=blue!20, rectangle, 
+    minimum height=3em, minimum width=4em]
+\tikzstyle{sum} = [draw, fill=blue!20, circle, node distance=1cm]
+\tikzstyle{pinstyle} = [pin edge={to-,thin,black}]
+
+\begin{tikzpicture}
+    % We start by placing the blocks
+%    \node [input, name=input] {};
+%    \node [sum, right of=input] (sum) {};
+    \node [block] (knowledge) {Knowledge};
+    \node [block] (persuation, right of = knowledge) {persuation};
+%    \node [block] (decision, right of = persuation) {decision};
+%    \node [block] (implementation, right of = decision) {implementation};
+%    \node [block] (confirmation, right of = implementation) {confirmation};
+
+
+%    \node [block, right of=controller, pin={[pinstyle]above:Disturbances},
+%            node distance=3cm] (system) {System};
+    % We draw an edge between the controller and system block to 
+    % calculate the coordinate u. We need it to place the measurement block. 
+%    \draw [->] (knowledge) -- node (persuation);
+    \draw [draw,->] (knowledge) -- node {$r$} (sum);
+%    \node [output, right of=system] (output) {};
+%    \node [block, below of=u] (measurements) {Measurements};
+
+    % Once the nodes are placed, connecting them is easy. 
+%    \draw [draw,->] (input) -- node {$r$} (sum);
+%    \draw [->] (sum) -- node {$e$} (controller);
+%    \draw [->] (system) -- node [name=y] {$y$}(output);
+%    \draw [->] (y) |- (measurements);
+%    \draw [->] (measurements) -| node[pos=0.99] {$-$} 
+% s        node [near end] {$y_m$} (sum);
+
+\end{tikzpicture}
 
 \subsubsection{adopter categories}
 Initially Rogers models \cite{rogers_model} operates with a model describing market penetration described bu an S curve, also known as the logistic function, ~\ref{fig:adoption}
