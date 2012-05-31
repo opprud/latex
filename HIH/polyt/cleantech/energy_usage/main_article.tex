@@ -105,8 +105,6 @@ The outcome of this article will try to present a framework for stimulation adop
 \subsection{Current and past efforts, supporting adoption of greener habits}
 A number of initiatives, some only Danish, other common European, have been deployed to reduce both the general energy-usage, and in scope of this article, with specific focus on electricity. The former organization \textit{Elsparefonden} had a primary focus of saving electricity in private households along with the public sector, but has been succeeded by \textit{Go' energi} witha more broad focus on energysavings in general \cite{ing_elspar} 
 
-\subsection{development of energyconsuming devices in households}
-
 \section{Theoretical considerations}
 Attempting to enforce new technology aided habits in a population can be described by models of technology adoption. 
 Traditional approaches suggest that technology adopters gain interest in a product by acquiring it and assessing its application, hereby assimilating knowledge about it \cite{gilbert}.
@@ -114,48 +112,9 @@ Traditional approaches suggest that technology adopters gain interest in a produ
 \subsection{Rogers innovation adoption model}
 Adoption of innovations, where innovations are defined as an idea, practice or object suited for adoption, is well described by Everett Rogers diffusion research.
 
-\subsubsection{The five step innovation diffusion process}
-Adopting an innovation requires a number of decisions. The decisions happens sequentially over time, and are by Rogers \cite{rogers_model} described as a five stage process.
-
-
-\tikzstyle{block} = [draw, fill=blue!20, rectangle, 
-    minimum height=3em, minimum width=4em]
-\tikzstyle{sum} = [draw, fill=blue!20, circle, node distance=1cm]
-\tikzstyle{pinstyle} = [pin edge={to-,thin,black}]
-
-\begin{tikzpicture}
-    % We start by placing the blocks
-%    \node [input, name=input] {};
-%    \node [sum, right of=input] (sum) {};
-    \node [block] (knowledge) {Knowledge};
-    \node [block] (persuation, right of = knowledge) {persuation};
-%    \node [block] (decision, right of = persuation) {decision};
-%    \node [block] (implementation, right of = decision) {implementation};
-%    \node [block] (confirmation, right of = implementation) {confirmation};
-
-
-%    \node [block, right of=controller, pin={[pinstyle]above:Disturbances},
-%            node distance=3cm] (system) {System};
-    % We draw an edge between the controller and system block to 
-    % calculate the coordinate u. We need it to place the measurement block. 
-%    \draw [->] (knowledge) -- node (persuation);
-    \draw [draw,->] (knowledge) -- node {$r$} (sum);
-%    \node [output, right of=system] (output) {};
-%    \node [block, below of=u] (measurements) {Measurements};
-
-    % Once the nodes are placed, connecting them is easy. 
-%    \draw [draw,->] (input) -- node {$r$} (sum);
-%    \draw [->] (sum) -- node {$e$} (controller);
-%    \draw [->] (system) -- node [name=y] {$y$}(output);
-%    \draw [->] (y) |- (measurements);
-%    \draw [->] (measurements) -| node[pos=0.99] {$-$} 
-% s        node [near end] {$y_m$} (sum);
-
-\end{tikzpicture}
-
 \subsubsection{adopter categories}
-Initially Rogers models \cite{rogers_model} operates with a model describing market penetration described bu an S curve, also known as the logistic function, ~\ref{fig:adoption}
-
+Initially Rogers models \cite{rogers_model} operates with a model describing market penetration described by an S curve, also known as the logistic function, ~\ref{fig:adoption}
+The five categories are described in table ~\ref{table:rogers_char} \newline
 
 \begin{figure}
 %\includegraphics{adoption_rates.pdf}
@@ -203,7 +162,7 @@ The late majority also represents app. 34\% of the consumers\cite{diffusion2}, b
 \hline
 
 Laggards & 
-Laggards are the remaining 16\% of customers trying to avoid changes and having to adopt new innovations. This group may not adopt a new innovation until traditional alternatives are no longer available  cs\cite{diffusion2}. Focus is very much on traditions, the group tends to have the highest age among adopters, lowest financial fluidity, and primarily only being in contact with close friends and family. Thus this group does not represent any opinion leadership\cite{rogers_model} \\ 
+Laggards are the remaining 16\% of customers trying to avoid changes and having to adopt new innovations. This group may not adopt a new innovation until traditional alternatives are no longer available  cs\cite{diffusion2}. Focus is very much on traditions, the group tends to have the highest age among adopters, lowest financial fluidity, and primarily only being in contact with close friends and family. Thus this group does not represent any opinion leadership\cite{rogers_model}\newline \\ 
 \hline
 
 \end{tabular}
@@ -211,24 +170,60 @@ Laggards are the remaining 16\% of customers trying to avoid changes and having 
 \end{table}
 
 
-asses roberts in terms of technology lifetime vs risk vs invenstment
+\subsubsection{Rogers five step innovation diffusion process}
+Adopting an innovation requires a number of decisions. The decisions happens sequentially over time, and are by Rogers \cite{rogers_model} described as a five stage process.
+\begin{figure}
+\includegraphics[width=0.45\textwidth]{iv_process.png}
+\caption{\textit{The innovation decision process}}			
+\label{fig:iv_process} % is used to refer this table in the text
+\end{figure}
+
+Briefly the five steps are :
+
+\textit{Knowledge:} When the individual is exposed to the innovation,  without prior knowledge .
+
+\textit{Persuasion:} The individual has gained interest, and seeks further information on the innovation.
+
+\textit{Decision:} Weighing the advantages / disadvantages of the innovation, thus rejecting or adopting the innovation initially. 
+
+\textit{Implementation:} The innovation is employed, and its usefulness assesed, possible search for further information may occur.
+
+\textit{Confirmation:} Final assessment of the innovations usefulness, thus determining futore use and full utilization.   
+
+Common for all five stages are that transition from one stage to another requires information to flow through \textit{Communication channels}. Likewise a \textit{Social systems}, must be present to frame the model.\newline
 
 
-Describe technology adoption cycles eg. early adopters, laggards etc.
+\subsubsection{a modified model of the innovation diffusion process}
+During a study, that has tried to identify the factors influencing the massive emerge of photovoltaics, Abram Kaplan, an American researcher has been attempting to asses the factors behind the rapid emerge, using Rogers model for \textit{diffusion of innovation}.
+Kaplan strongly argues and proves that Rogers five factors, introduced in the previous section, in not operational enough as a model, and is lacking a few factors. Kaplan presents and proofs a model, inspired from Rogers, but it has following key differences, in the first two of the five steps, before the third step \textit{Decision} \cite{passive_to_active}: \newline
 
-Common for the following models are, that they are used to describe the factors influencing decision makers in the adoptions of innovations.
-of innovations.
+\textit{Decisions does not happen sequentially}, but instead, the most vital factor resulting in adoption is \textit{interest}. \textit{Interest} is stimulated by a number of variables, inspired by Rogers theory. \newline
+
+\textit{Development of new variables}: \newline
+
+\textit{Context}, similar to Rogers, and describes exogenous variables ("outside factors, that are unchangable or independent"), under three subcategories, \textit{Enviromental, Organizational} and \textit{Personal}. These outline the scope and affect the social system, that must be present to use the model.\newline
+
+\textit{Motivation}, may be a good fertilizer of interest, but is not sufficient alone. Motivation can be both ideological, in the case of photovoltaics, sustainability and independence may be the motivation, but also economic factors, such as payback time can be a motivation. \newline
+
+\textit{Knowledge} is still central, but does not cover as broad as Rogers model, in this context, knowledge refers to a factual, objective base of information, more specific the term \textit{Technical Knowledge} is used.\newline
+
+\textit{Experience}, can be both good and bad, but is thought to be rather vital, experience can contribute to knowledge and behavioral intentions and actual adoptions.\newline
+
+\textit{Familiarity}, a cognitive state resulting from experience. Familiarity suggest a level of comfort with the object, that cannot result from only \textit{Knowledge}. Often \textit{brand loyality} can positively affect adoption, and this is closely associated with familarity.\newline
+
+\textit{Interest}, is the ultimate dependent variable, leading to the adoption decision, interest is similar to Rogers \textit{Persuation}. Interest described the likelihood of adoption. \newline
 
 
+Kaplan has operationalized his model by collecting survey results from approximately 400 US adopters and non-adopters of photovoltaics. Hereby assessing the factors affecting the group of interest, has identified, as playing a role regarding their choice either to adopt the technology or not. The model has been deployed, using numbers and weights to get comparable results, thus validating or rejecting hypothesises.
 
-\textbf{summary:}
+Photovoltaics has gained massive interest in Denmark and Germany, in particular, so a model assesing the rapid growth, within this field is believed also to be suited, when looking into changing energy habits into something a bit more green, aided by IT.
 
-Describe and argue the usage of Kaplan's modified rogers model
-\textit{motivation ,experience, familiarity, context, knowledge, interest}
+\begin{figure}
+\includegraphics[width=0.5\textwidth]{kaplan_model.png}
+\caption{\textit{Kaplans modified innovation decision model}}			
+\label{fig:kaplan_model} % is used to refer this table in the text
+\end{figure}
 
-linear regeression ?
-
-relate / score existing efforts in a matrix
 
 \subsection{hypothesis}
 \textit{"There are potential uncovered needs, in visualizing energy consumption in real time, to enforce greener habits, among the groups, Innovators, Early Adopters and Early Majority, according to rogers model for innovation adoption."}
@@ -243,7 +238,9 @@ The perspective applied is from an approach where the interest is to focus on IT
 
 Since the emerge of new IT aided technologies for communicating,  browsing the web, collecting data and communicating via social medias has experienced a massive growth the last decade, it will be a valid assumption that these technologies will play a central role in most Danish energy consumers everyday life.
 
-This field, in particular the emerge of smartphones, combined with collective sensing and data-sharing presents a massive potential in terms of ability to collect, share and analyse data. Much of this relies on the continuous development and emerge of new technologies, thus models for adoption of new technology, in particular \textit{Everet Rogers } theory behind \textit{Diffusion of innovations will be used}.
+This field, in particular the emerge of smartphones, combined with collective sensing and data-sharing presents a massive potential in terms of ability to collect, share and analyse data. Much of this relies on the continuous development and emerge of new technologies, thus models for adoption of new technology, in particular \textit{Everet Rogers } theory behind \textit{Diffusion of innovations will be used} to asses which adopter groups have been impacted by current campaigns.
+
+Abram Kaplans model will be used as a stencil, to pinpoint which factors may have been actuated by the campaings of interest, in this article. A survey among energyusers will be outside the scope of this article, but would be an interesting follow-up, to pinpoint more accurately, the effect of the campaigns.  
 
 Existing evaluation of present conducted campaigns and where possible evaluation of current activities, both with primary focus on electricity usage, will be analyzed.
 
@@ -344,51 +341,75 @@ Similar initiatives are emerging availible to the private customer, with a \text
 
 \textbf{\textit{Keywords - data-collection, optimization, compare, commitment, real-time data.}}
 
-\section{Assesing inititatives}
+\section{Discussion}
+In order to asses the initiatives presented in the previous section, the key characteristics of each campaign, will be assessed and trying to match specific keywords from Rogers and Kaplans models presented.
+
+
+Assesing inititatives
 
 \subsection{grouping into adopter segments}
-In table ~\ref{table:asses_init} the different initiatives are assessed, and characterized among each other. Characterization is done in relation to the model describing adopter segments. 
+In table ~\ref{table:asses_init}, third column the different initiatives are assessed, and characterized among each other. Characterization is done in relation to the model attempting to identify one or more segments the campaign has successfully targeted. 
 
 \subsection{stimulating adoption}
+The fourth column in table ~\ref{table:asses_init} attempt to rate the campaigns aim, at each of Kaplans factors, stimulatig adoption.
 
 %table below
-\begin{table}[t2]
+\begin{table*}[t2]
 
 \caption{Assessing different initiatives} % title of Table
 \centering  % used for centering table
 
-\begin{tabular}{|p{1,5cm} |p{3.5cm} |p{2.5cm}|} % centered columns (4 columns)
+\begin{tabular}{|p{2,5cm} |p{3.5cm} |p{2.5cm} |p{4.5cm} |} % centered columns (4 columns)
 \hline\hline                        %inserts double horizontal lines
 
-Initiative & Charachteristics & adopter group \\ [0.5ex] % inserts table 
+Initiative & Charachteristics & adopter group, according to Rogers & Stimulation of adoption factors according to Kaplan\\ [0.5ex] % inserts table 
 %heading
 \hline                  % inserts single horizontal line
 
 EU energy mark & 
 Mandatory, Easy understandable, Rational  & 
-All  \\
+All &
+Motivation  [high] \newline 
+Context	    [medium] \newline 
+Knowledge	[low] \newline 
+Experience  [medium] \newline 
+Familiarity [high] \\
 \hline
 
 Go' energi & 
 Achieve savings by adopting, Informative, Buyer guidance & 
-Early majority\newline  Late Majority  \\
+Early majority\newline  Late Majority &
+Motivation  [medium] \newline 
+Context	    [high] \newline 
+Knowledge	[medium] \newline 
+Experience  [low] \newline 
+Familiarity [medium] \\
 \hline
 
 Chasing the hidden energy & 
-Educational, Reveal "hidden" consumption, Reward initiative, Promote energy-leadership & Early \& Late majority 
-  \\
+Educational, Reveal "hidden" consumption, Reward initiative, Promote energy-leadership & Early majority\newline  Late Majority &
+Motivation  [high] \newline 
+Context	    [high] \newline 
+Knowledge	[high] \newline 
+Experience  [low] \newline 
+Familiarity [medium] \\
 \hline
 
 Se-elforbrug & 
 Followup, guidance, compare and rate, visualize savings  & 
-Early Adopters  \\
+Early Adopters &
+Motivation  [low] \newline 
+Context	    [low] \newline 
+Knowledge	[low] \newline 
+Experience  [low] \newline 
+Familiarity [low] \\
 \hline
 
 
 \end{tabular}
 \label{table:asses_init} % is used to refer this table in the text
 
-\end{table}
+\end{table*}
 
 
 
